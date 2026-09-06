@@ -1,0 +1,373 @@
+{
+  "id": "584bd411-8bf2-491e-a862-b3e438c5c37a",
+  "revision": 0,
+  "last_node_id": 10,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [
+        -1703.6784382417857,
+        -974.5347621640146
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "These are the video models"
+      ],
+      "widgets_values_named": {
+        "text": "These are the video models"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 10,
+      "type": "Note",
+      "pos": [
+        -1167.3475124357278,
+        -985.8219772508991
+      ],
+      "size": [
+        140,
+        60
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Image models"
+      ],
+      "widgets_values_named": {
+        "text": "Image models"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "UNETLoader",
+      "pos": [
+        -1697.0421965639075,
+        -835.0366708357515
+      ],
+      "size": [
+        347.9923520533903,
+        82.92848038158786
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "models": [
+          {
+            "name": "ltxv-2b-0.9.8-distilled-fp8.safetensors",
+            "url": "https://huggingface.co/Lightricks/LTX-Video/resolve/main/ltxv-2b-0.9.8-distilled-fp8.safetensors",
+            "directory": "diffusion_models"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "ltxv-2b-0.9.8-distilled-fp8.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "ltxv-2b-0.9.8-distilled-fp8.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 2,
+      "type": "CLIPLoader",
+      "pos": [
+        -1693.8758519134697,
+        -698.1778251003759
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "models": [
+          {
+            "name": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/t5xxl_fp8_e4m3fn_scaled.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "t5xxl_fp8_e4m3fn_scaled.safetensors",
+        "ltxv",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "ltxv",
+        "device": "default"
+      }
+    },
+    {
+      "id": 1,
+      "type": "VAELoader",
+      "pos": [
+        -1685.5287677874542,
+        -544.9243936644175
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "models": [
+          {
+            "name": "LTXV-13B-0.9.8-distilled-VAE.safetensors",
+            "url": "https://huggingface.co/QuantStack/LTXV-13B-0.9.8-distilled-GGUF/resolve/main/vae/LTXV-13B-0.9.8-distilled-VAE.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "LTXV-13B-0.9.8-distilled-VAE.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "LTXV-13B-0.9.8-distilled-VAE.safetensors"
+      }
+    },
+    {
+      "id": 9,
+      "type": "VAELoader",
+      "pos": [
+        -1168.1978488106379,
+        -539.1738598947651
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "flux2-vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/vae/flux2-vae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "flux2-vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "flux2-vae.safetensors"
+      }
+    },
+    {
+      "id": 7,
+      "type": "CLIPLoader",
+      "pos": [
+        -1165.4691933579575,
+        -698.9923215855335
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "qwen_3_8b.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "qwen_3_8b.safetensors",
+        "flux2",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen_3_8b.safetensors",
+        "type": "flux2",
+        "device": "default"
+      }
+    },
+    {
+      "id": 6,
+      "type": "UNETLoader",
+      "pos": [
+        -1162.0474488235348,
+        -838.6885810835129
+      ],
+      "size": [
+        347.9923520533903,
+        82.92848038158786
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "Node name for S&R": "UNETLoader",
+        "models": [
+          {
+            "name": "flux-2-klein-base-9b.safetensors",
+            "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B/resolve/main/flux-2-klein-base-9b.safetensors",
+            "directory": "diffusion_models"
+          }
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0"
+      },
+      "widgets_values": [
+        "flux-2-klein-base-9b.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "flux-2-klein-base-9b.safetensors",
+        "weight_dtype": "default"
+      }
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.456765298203885,
+      "offset": [
+        2789.77030870449,
+        1539.4790930289626
+      ]
+    },
+    "frontendVersion": "1.51.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
