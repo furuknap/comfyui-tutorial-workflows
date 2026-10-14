@@ -1,0 +1,1329 @@
+{
+  "id": "9bf43cb9-9837-402b-ae54-2a04647fe724",
+  "revision": 0,
+  "last_node_id": 23,
+  "last_link_id": 38,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "PreviewImage",
+      "pos": [
+        657.7531758530052,
+        -1072.4236420135303
+      ],
+      "size": [
+        516.921253307542,
+        446.17451188381733
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 9,
+      "type": "da4f6c07-cbdb-4e42-9780-68e825758e01",
+      "pos": [
+        -245.5074961772446,
+        -1073.630752020924
+      ],
+      "size": [
+        466.2531504039042,
+        190.36238258984565
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      }
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        -691.5308559722538,
+        -1591.5848982372765
+      ],
+      "size": [
+        282.798828125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ChatGPT Image Sep 30, 2026, 12_47_02 AM-2.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "ChatGPT Image Sep 30, 2026, 12_47_02 AM-2.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 15,
+      "type": "8cafee1c-4eb7-48ec-aaf8-47298bd410f5",
+      "pos": [
+        -275.7394987711467,
+        -1593.8828871817068
+      ],
+      "size": [
+        466.2531504039042,
+        190.36238258984565
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      }
+    },
+    {
+      "id": 16,
+      "type": "PreviewImage",
+      "pos": [
+        639.0347482718508,
+        -1594.9806211805371
+      ],
+      "size": [
+        356.0827069877431,
+        356.5735727163842
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 17,
+      "type": "5542d30d-1fe7-43d9-b90c-7088301cb07c",
+      "pos": [
+        330.1354045271378,
+        -1073.2249632962369
+      ],
+      "size": [
+        263.5416044922823,
+        133.42748216720202
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "IMAGE,MASK",
+          "link": 22
+        },
+        {
+          "label": "Width",
+          "name": "resize_type.width",
+          "type": "INT",
+          "widget": {
+            "name": "resize_type.width"
+          },
+          "link": null
+        },
+        {
+          "label": "Height",
+          "name": "resize_type.height",
+          "type": "INT",
+          "widget": {
+            "name": "resize_type.height"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "resized",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1024,
+        1024
+      ],
+      "widgets_values_named": {
+        "resize_type.width": 1024,
+        "resize_type.height": 1024
+      }
+    },
+    {
+      "id": 19,
+      "type": "LoadImage",
+      "pos": [
+        -619.0287727222827,
+        -1072.5142893132129
+      ],
+      "size": [
+        282.798828125,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            28
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "pasted/image.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "pasted/image.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 21,
+      "type": "21676e0a-4158-443e-a8da-f828e14c9074",
+      "pos": [
+        292.47337724080785,
+        -1596.4089083282738
+      ],
+      "size": [
+        263.5416044922823,
+        133.42748216720202
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "IMAGE,MASK",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "resized",
+          "type": "IMAGE",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1024,
+        1024
+      ],
+      "widgets_values_named": {
+        "resize_type.width": 1024,
+        "resize_type.height": 1024
+      }
+    }
+  ],
+  "links": [
+    [
+      20,
+      10,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      22,
+      9,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      17,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      19,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      15,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      21,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "da4f6c07-cbdb-4e42-9780-68e825758e01",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 23,
+          "lastLinkId": 38,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Background Removal",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -676.1120828277257,
+            -1293.5314965748485,
+            128,
+            68
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            625.7321868960495,
+            -1293.5314965748485,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "177543c3-caf0-4cf5-9b98-f5341a420aa9",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              4,
+              1
+            ],
+            "localized_name": "image",
+            "pos": [
+              -572.1120828277257,
+              -1269.5314965748485
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "906628a3-70ca-4a55-aae9-704525dfa00a",
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "linkIds": [
+              8
+            ],
+            "localized_name": "IMAGE",
+            "pos": [
+              649.7321868960495,
+              -1269.5314965748485
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 4,
+            "type": "JoinImageWithAlpha",
+            "pos": [
+              375.87824939604934,
+              -1284.3360938066555
+            ],
+            "size": [
+              185.8609375,
+              46
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 4
+              },
+              {
+                "localized_name": "alpha",
+                "name": "alpha",
+                "type": "MASK",
+                "link": 7
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  8
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "JoinImageWithAlpha"
+            }
+          },
+          {
+            "id": 6,
+            "type": "InvertMask",
+            "pos": [
+              161.4801352219613,
+              -1391.8589562661184
+            ],
+            "size": [
+              140,
+              26
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "link": 6
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MASK",
+                "name": "MASK",
+                "type": "MASK",
+                "links": [
+                  7
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "InvertMask"
+            }
+          },
+          {
+            "id": 2,
+            "type": "RemoveBackground",
+            "pos": [
+              -99.3511968096987,
+              -1392.3174035058862
+            ],
+            "size": [
+              181.705078125,
+              46
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "bg_removal_model",
+                "name": "bg_removal_model",
+                "type": "BACKGROUND_REMOVAL",
+                "link": 2
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 1
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": [
+                  6
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "RemoveBackground"
+            }
+          },
+          {
+            "id": 3,
+            "type": "LoadBackgroundRemovalModel",
+            "pos": [
+              -513.4010828277256,
+              -1486.623036883576
+            ],
+            "size": [
+              321.6919921875,
+              58
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "bg_model",
+                "name": "bg_model",
+                "type": "BACKGROUND_REMOVAL",
+                "links": [
+                  2
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "LoadBackgroundRemovalModel"
+            },
+            "widgets_values": [
+              "birefnet.safetensors"
+            ],
+            "widgets_values_named": {
+              "bg_removal_name": "birefnet.safetensors"
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 7,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": 4,
+            "target_slot": 1,
+            "type": "MASK"
+          },
+          {
+            "id": 6,
+            "origin_id": 2,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 0,
+            "type": "MASK"
+          },
+          {
+            "id": 2,
+            "origin_id": 3,
+            "origin_slot": 0,
+            "target_id": 2,
+            "target_slot": 0,
+            "type": "BACKGROUND_REMOVAL"
+          },
+          {
+            "id": 4,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 4,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 1,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 2,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 8,
+            "origin_id": 4,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          }
+        ],
+        "extra": {}
+      },
+      {
+        "id": "8cafee1c-4eb7-48ec-aaf8-47298bd410f5",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 23,
+          "lastLinkId": 38,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Background Removal custom",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -676.1120828277257,
+            -1293.5314965748485,
+            128,
+            68
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            625.7321868960495,
+            -1293.5314965748485,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "177543c3-caf0-4cf5-9b98-f5341a420aa9",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              17,
+              18
+            ],
+            "localized_name": "image",
+            "pos": [
+              -572.1120828277257,
+              -1269.5314965748485
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "906628a3-70ca-4a55-aae9-704525dfa00a",
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "linkIds": [
+              19
+            ],
+            "localized_name": "IMAGE",
+            "pos": [
+              649.7321868960495,
+              -1269.5314965748485
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 11,
+            "type": "JoinImageWithAlpha",
+            "pos": [
+              375.87824939604934,
+              -1284.3360938066555
+            ],
+            "size": [
+              185.8609375,
+              46
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 17
+              },
+              {
+                "localized_name": "alpha",
+                "name": "alpha",
+                "type": "MASK",
+                "link": 14
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  19
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "JoinImageWithAlpha"
+            }
+          },
+          {
+            "id": 12,
+            "type": "InvertMask",
+            "pos": [
+              161.4801352219613,
+              -1391.8589562661184
+            ],
+            "size": [
+              140,
+              26
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "link": 15
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MASK",
+                "name": "MASK",
+                "type": "MASK",
+                "links": [
+                  14
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "InvertMask"
+            }
+          },
+          {
+            "id": 13,
+            "type": "RemoveBackground",
+            "pos": [
+              -99.3511968096987,
+              -1392.3174035058862
+            ],
+            "size": [
+              181.705078125,
+              46
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "bg_removal_model",
+                "name": "bg_removal_model",
+                "type": "BACKGROUND_REMOVAL",
+                "link": 16
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 18
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": [
+                  15
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "RemoveBackground"
+            }
+          },
+          {
+            "id": 14,
+            "type": "LoadBackgroundRemovalModel",
+            "pos": [
+              -513.4010828277256,
+              -1486.623036883576
+            ],
+            "size": [
+              321.6919921875,
+              58
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "bg_model",
+                "name": "bg_model",
+                "type": "BACKGROUND_REMOVAL",
+                "links": [
+                  16
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "LoadBackgroundRemovalModel"
+            },
+            "widgets_values": [
+              "birefnet.safetensors"
+            ],
+            "widgets_values_named": {
+              "bg_removal_name": "birefnet.safetensors"
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 14,
+            "origin_id": 12,
+            "origin_slot": 0,
+            "target_id": 11,
+            "target_slot": 1,
+            "type": "MASK"
+          },
+          {
+            "id": 15,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 12,
+            "target_slot": 0,
+            "type": "MASK"
+          },
+          {
+            "id": 16,
+            "origin_id": 14,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 0,
+            "type": "BACKGROUND_REMOVAL"
+          },
+          {
+            "id": 17,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 11,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 18,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 19,
+            "origin_id": 11,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          }
+        ],
+        "extra": {}
+      },
+      {
+        "id": "5542d30d-1fe7-43d9-b90c-7088301cb07c",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 23,
+          "lastLinkId": 38,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Resize custom",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -781.2257580430778,
+            -634.1531276688142,
+            128,
+            108
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            113.69549526446349,
+            -634.1531276688142,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "4ae4d876-5712-4d79-8f0e-74e855dfd9a4",
+            "name": "input",
+            "type": "IMAGE,MASK",
+            "linkIds": [
+              13
+            ],
+            "localized_name": "input",
+            "pos": [
+              -677.2257580430778,
+              -610.1531276688142
+            ]
+          },
+          {
+            "id": "84827448-71d2-4fae-b6a6-4b7badd3ec94",
+            "name": "resize_type.width",
+            "type": "INT",
+            "linkIds": [
+              24
+            ],
+            "label": "Width",
+            "pos": [
+              -677.2257580430778,
+              -590.1531276688142
+            ]
+          },
+          {
+            "id": "f20241e4-fbb6-43b9-825e-a50d364f1aa2",
+            "name": "resize_type.height",
+            "type": "INT",
+            "linkIds": [
+              25
+            ],
+            "label": "Height",
+            "pos": [
+              -677.2257580430778,
+              -570.1531276688142
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "c797159e-e9bf-4862-8631-94e7e70b80d2",
+            "name": "resized",
+            "type": "IMAGE",
+            "linkIds": [
+              11
+            ],
+            "localized_name": "resized",
+            "pos": [
+              137.6954952644635,
+              -610.1531276688142
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 7,
+            "type": "ResizeImageMaskNode",
+            "pos": [
+              -216.30450473553648,
+              -685.4871791206325
+            ],
+            "size": [
+              270,
+              154
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "input",
+                "name": "input",
+                "type": "IMAGE,MASK",
+                "link": 13
+              },
+              {
+                "localized_name": "width",
+                "name": "resize_type.width",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.width"
+                },
+                "link": 24
+              },
+              {
+                "localized_name": "height",
+                "name": "resize_type.height",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.height"
+                },
+                "link": 25
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "resized",
+                "name": "resized",
+                "type": "IMAGE,MASK",
+                "links": [
+                  11
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ResizeImageMaskNode"
+            },
+            "widgets_values": [
+              "scale dimensions",
+              512,
+              512,
+              "center",
+              "lanczos"
+            ],
+            "widgets_values_named": {
+              "resize_type": "scale dimensions",
+              "resize_type.width": 512,
+              "resize_type.height": 512,
+              "resize_type.crop": "center",
+              "scale_method": "lanczos"
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 11,
+            "origin_id": 7,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 13,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 7,
+            "target_slot": 0,
+            "type": "IMAGE,MASK"
+          },
+          {
+            "id": 24,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 7,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 25,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 7,
+            "target_slot": 2,
+            "type": "INT"
+          }
+        ],
+        "extra": {}
+      },
+      {
+        "id": "21676e0a-4158-443e-a8da-f828e14c9074",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 23,
+          "lastLinkId": 38,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Resize custom",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -781.2257580430778,
+            -634.1531276688142,
+            151.55859375,
+            108
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            113.69549526446349,
+            -634.1531276688142,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "4ae4d876-5712-4d79-8f0e-74e855dfd9a4",
+            "name": "input",
+            "type": "IMAGE,MASK",
+            "linkIds": [
+              30
+            ],
+            "localized_name": "input",
+            "pos": [
+              -653.6671642930778,
+              -610.1531276688142
+            ]
+          },
+          {
+            "id": "84827448-71d2-4fae-b6a6-4b7badd3ec94",
+            "name": "resize_type.width",
+            "type": "INT",
+            "linkIds": [
+              31
+            ],
+            "pos": [
+              -653.6671642930778,
+              -590.1531276688142
+            ]
+          },
+          {
+            "id": "f20241e4-fbb6-43b9-825e-a50d364f1aa2",
+            "name": "resize_type.height",
+            "type": "INT",
+            "linkIds": [
+              32
+            ],
+            "pos": [
+              -653.6671642930778,
+              -570.1531276688142
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "c797159e-e9bf-4862-8631-94e7e70b80d2",
+            "name": "resized",
+            "type": "IMAGE",
+            "linkIds": [
+              29
+            ],
+            "localized_name": "resized",
+            "pos": [
+              137.6954952644635,
+              -610.1531276688142
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 20,
+            "type": "ResizeImageMaskNode",
+            "pos": [
+              -216.30450473553648,
+              -685.4871791206325
+            ],
+            "size": [
+              270,
+              154
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "input",
+                "name": "input",
+                "type": "IMAGE,MASK",
+                "link": 30
+              },
+              {
+                "localized_name": "width",
+                "name": "resize_type.width",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.width"
+                },
+                "link": 31
+              },
+              {
+                "localized_name": "height",
+                "name": "resize_type.height",
+                "type": "INT",
+                "widget": {
+                  "name": "resize_type.height"
+                },
+                "link": 32
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "resized",
+                "name": "resized",
+                "type": "IMAGE,MASK",
+                "links": [
+                  29
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ResizeImageMaskNode"
+            },
+            "widgets_values": [
+              "scale dimensions",
+              512,
+              512,
+              "center",
+              "lanczos"
+            ],
+            "widgets_values_named": {
+              "resize_type": "scale dimensions",
+              "resize_type.width": 512,
+              "resize_type.height": 512,
+              "resize_type.crop": "center",
+              "scale_method": "lanczos"
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 29,
+            "origin_id": 20,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 30,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 20,
+            "target_slot": 0,
+            "type": "IMAGE,MASK"
+          },
+          {
+            "id": 31,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 20,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 32,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 20,
+            "target_slot": 2,
+            "type": "INT"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8091875884513804,
+      "offset": [
+        806.6884866491478,
+        2010.905640562026
+      ]
+    },
+    "frontendVersion": "1.53.10",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
